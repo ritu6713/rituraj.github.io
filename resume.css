@@ -3,7 +3,7 @@ body {
 }
 /*body header*/
 #body-header {
-  height: 114vh;
+  height: 80vh;
   opacity: 0.8;
   background-image: url(macbook-mouse.jpg);
   background-attachment: fixed;
@@ -47,7 +47,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.5rem;
   font-weight: 550;
-  padding-top:212px;
+  padding-top:98px;
   transition: font-size 1.5s;
 }
 .social-list {
@@ -97,6 +97,11 @@ body {
   margin: auto;
 
   margin-top: -15vh;
+}
+@media screen and (max-width:400px) {
+  #my-image {
+    margin-top: -11vh;
+  }
 }
 #my-image img {
   height: 100%;
@@ -188,6 +193,11 @@ section {
   margin-left:15px;
   vertical-align:middle;
 }
+@media screen and (max-width: 400px) {
+  .skill-progress {
+    margin: 8px;
+  }
+}
 
 #experience{
   height: 105vh;
@@ -196,7 +206,7 @@ section {
 .timeline{
    position: relative;
    width:75%;
-   border: 2px solid black;
+   /*border: 2px solid black;*/
 }
 .timeline-box{
   position:relative;
@@ -218,7 +228,7 @@ section {
   height:  10.6px;
   width: 10.6px;
   top:  45%;
-  right:-12%;
+  right:-12.5%;
   z-index: 1;
 }
 .timeline-box:nth-child(2n):after{
@@ -226,10 +236,10 @@ section {
   position:absolute;
   border-radius: 50%;
   background-color:  rgba(231, 112, 112, 0.938);
-  height:  9.6px;
-  width: 9.6px;
+  height:  11.6px;
+  width: 11.6px;
   top:  44%;
-  left: -11%;
+  left: -10.4%;
   z-index: 1;
 }
 .timeline-divider{
@@ -240,6 +250,34 @@ section {
   top:  12%;
   left: 50%;
 }
+@media screen and (max-width: 600px) {
+   .timeline-divider{
+     left: 4%;
+    }
+    .timeline-box{
+      left: 11%;
+      width: 80%;
+    }
+    .timeline-box:nth-child(2n){
+      left: 11%;
+    }
+    .timeline-box:nth-child(2n+1):after{ 
+      left: -12%;
+    }
+}
+@media screen and (max-width: 400px){
+  .timeline-box:nth-child(2n):after{
+    left: -14%;
+  }
+  .timeline-box:nth-child(2n+1):after {
+    left: -14%;
+}
+  #experience {
+  height: 96vh;
+  }
+ 
+}
+
 .timeline-divider img{
   height:28px;
   width: 28px;
@@ -255,6 +293,11 @@ section {
 #education{
   height: 105vh;
   background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+@media screen and (max-width:400px){
+  #education{
+    height: 96vh;
+  }
 }
 #portfolio{
   height: 90vh;
@@ -290,6 +333,15 @@ section {
   color: transparent;
   text-align: center;
   padding: 10px;
+}
+@media screen and (max-width:400px){
+  #portfolio {
+    height: 170vh;
+  }
+  .portfolio-image-container img{
+    width: 200px;
+    height: 190px;
+  }
 }
 #contact{
   height: 70vh;
@@ -387,4 +439,22 @@ form{
   margin: 0px 8px 8px 0px;
   font-weight: 100;
   font-size: 0.9rem;
+}
+@media screen and (max-width:400px){
+  #contact {
+    height: 80vh;
+  }
+  #my-details-container {
+    margin-left: 8%;
+  }
+  #contact-form input, textarea {
+    padding: 4px 5px;
+  }
+  #contact-form button {
+    margin-top: 6%;
+    margin-left: 18%;
+    padding: 0.2em 0.8em 0.78em;
+    
+
+  }
 }
