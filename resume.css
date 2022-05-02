@@ -203,34 +203,45 @@ section {
   margin-left:15px;
   vertical-align:middle;
 }
-@media screen and (max-width: 400px) {
-  .skill-progress {
-    margin: 8px;
-  }
-}
+
 @media screen and (max-width: 503px) {
   .skills-display {
     width: 110%;
   }
 }
-@media screen and (max-width: 399px) {
-  #skills{
-  height: 55vh;
+@media screen and (max-width: 411px) {
+  .skills-display {
+    padding: 0px;
+  }
+  .skill-progress{
+    width: 9rem;
+  }
 }
+@media screen and (max-width:353px) {
+  .skill-progress{
+    width: 14rem;
+    margin: 16px;
+  }
+  #skills {
+    height: 87vh;
+  }
+
 }
+ 
 #experience{
   height: 105vh;
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
-@media screen and (max-width:958px){
+/*@media screen and (max-width:958px){
   #experience {
     height: 111vh;
-}
+  }
 .timeline{
    position: relative;
    width:75%;
-   /*border: 2px solid black;*/
-}
+   border: 2px solid black;
+  }
+}*/
 .timeline-box{
   position:relative;
   width: 40%;
@@ -273,6 +284,16 @@ section {
   top:  12%;
   left: 50%;
 }
+ @media screen and (max-width:1560px){ 
+    #experience { 
+      height: 111vh; 
+    }  
+    .timeline{
+   position: relative;
+   width:75%;
+   /* border: 2px solid black; */
+    } 
+  } 
 @media screen and (max-width:640px){
   .timeline {
   width: 100%;
@@ -322,16 +343,17 @@ section {
   height: 105vh;
   background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
+@media screen and (max-width:1497px){
+  #education{
+    height: 111vh;
+  }
+}
 @media screen and (max-width:400px){
   #education{
     height: 96vh;
   }
 }
-@media screen and (max-width:958px){
-  #education{
-    height: 111vh;
-  }
-}
+
 #portfolio{
   height: 90vh;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
@@ -367,38 +389,6 @@ section {
   text-align: center;
   padding: 10px;
 }
-@media screen and (max-width:400px){
-  #portfolio {
-    height: 170vh;
-  }
-  .portfolio-image-container img{
-    width: 200px;
-    height: 190px;
-  }
-}
-@media screen and (max-width:640px){
-  .portfolio-display {
-    width: 70%;
-  }
-}
-@media screen and (max-width:548px){
-  .portfolio-display {
-    width:86%;
-  }
-}
-@media screen and (max-width:447px){
-  .portfolio-display {
-    width: 97%;
-  }
-}
-@media screen and (max-width:401px){
-  .portfolio-display {
-    width: 120%;
-  }
-  #portfolio {
-    height: 97vh;
-}
-}
 @media screen and (max-width:960px){
   .portfolio-display {
     width: 80%;
@@ -410,6 +400,11 @@ section {
     width: 98%;
   }
  
+}
+@media screen and (max-width:641px){
+  .portfolio-display {
+    width: 100%;
+  }
 }
 @media screen and (max-width:587px){
   .portfolio-display {
@@ -424,12 +419,51 @@ section {
   .portfolio-image-container img {
     width: 150px;
     height: 150px;
+  }
 }
-#portfolio {
-  height: 74vh;
+@media screen and (max-width:550px){
+  .portfolio-display {
+    width:100%;
+  }
 }
+@media screen and (max-width:510px){
+  .portfolio-display {
+    width:102%;
+  }
+}
+@media screen and (max-width:500px){
+  .portfolio-display {
+    width:102%;
+  }
+  .portfolio-image-container img {
+    width: 120px;
+    height: 120px;
+  }
+  #portfolio{
+    height: 60vh;
+  }
+}
+@media screen and (max-width:447px){
+  .portfolio-display {
+    width: 102%;
+  }
+  .portfolio-image-container img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width:354px){
+  .portfolio-display {
+    width: 81%;
+  }
+  .portfolio-image-container {
+   margin: 6px;
+}
+}
+
  
-}
+ 
+
 #contact{
   height: 70vh;
   background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
@@ -511,48 +545,31 @@ form{
  height: 25px;
  width: 25px;
 }
-.center-social-item {
-  height: 20px;
-  width: 30px;
-  text-align: center;
+ @media screen and (max-width:894px) {
+   #contact{
+     height: fit-content;
+   }
+ }
+ @media screen and (max-width:610px) {
+   #contact-form button {
+    font-size: -0.05rem;
+   }
 }
-.horizontal-list{
-  list-style: none;
-  padding-left: 0px;
-  margin: 0px;
-}
-.horizontal-list li {
-  display: inline-block;
-  margin: 0px 8px 8px 0px;
-  font-weight: 100;
-  font-size: 0.9rem;
-}
-@media screen and (max-width:400px){
-  #contact {
-    height: 75vh;
+@media screen and (max-width:538px) {
+  #contact-form button {
+   font-size: -0.05rem;
   }
-  #my-details-container {
-    margin-left: 8%;
+}
+@media screen and (max-width: 400px) {
+  #contact-form-container {
+    width: 46%;
   }
-  #contact-form input, textarea {
-    padding: 4px 5px;
+  #contact-form {
+    margin-left: 11%;
   }
   #contact-form button {
-    margin-top: 6%;
-    margin-left: 18%;
-    padding: 0.2em 0.8em 0.78em;
-    
-
+  padding: -0.2em 0.8em 0.78em;
+  font-size: -0.05rem;
   }
 }
-@media screen and (max-width:440px){
-  #contact {
-    height: 75vh;
-  }
-}
-@media screen and (max-width:597px){
-  #contact {
-    height: 75vh;
-  }
-}
-}
+ 
