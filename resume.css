@@ -103,6 +103,16 @@ body {
     margin-top: -11vh;
   }
 }
+@media screen and (max-width: 503px) {
+  #my-image  {
+    margin-top: -9vh;
+  }
+}
+@media screen and (max-width: 1149px) {
+  #my-image  {
+    margin-top: -10vh;
+  }
+}
 #my-image img {
   height: 100%;
   width: 100%;
@@ -198,10 +208,23 @@ section {
     margin: 8px;
   }
 }
-
+@media screen and (max-width: 503px) {
+  .skills-display {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 399px) {
+  #skills{
+  height: 55vh;
+}
+}
 #experience{
   height: 105vh;
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+@media screen and (max-width:958px){
+  #experience {
+    height: 111vh;
 }
 .timeline{
    position: relative;
@@ -249,6 +272,11 @@ section {
   border: 1px dashed rgba(142, 243, 231, 0.876);
   top:  12%;
   left: 50%;
+}
+@media screen and (max-width:640px){
+  .timeline {
+  width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
    .timeline-divider{
@@ -299,6 +327,11 @@ section {
     height: 96vh;
   }
 }
+@media screen and (max-width:958px){
+  #education{
+    height: 111vh;
+  }
+}
 #portfolio{
   height: 90vh;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
@@ -342,6 +375,60 @@ section {
     width: 200px;
     height: 190px;
   }
+}
+@media screen and (max-width:640px){
+  .portfolio-display {
+    width: 70%;
+  }
+}
+@media screen and (max-width:548px){
+  .portfolio-display {
+    width:86%;
+  }
+}
+@media screen and (max-width:447px){
+  .portfolio-display {
+    width: 97%;
+  }
+}
+@media screen and (max-width:401px){
+  .portfolio-display {
+    width: 120%;
+  }
+  #portfolio {
+    height: 97vh;
+}
+}
+@media screen and (max-width:960px){
+  .portfolio-display {
+    width: 80%;
+  }
+ 
+}
+@media screen and (max-width:719px){
+  .portfolio-display {
+    width: 98%;
+  }
+ 
+}
+@media screen and (max-width:587px){
+  .portfolio-display {
+    width: 99%;
+  }
+ 
+}
+@media screen and (max-width:582px){
+  .portfolio-display {
+    width: 99%;
+  }
+  .portfolio-image-container img {
+    width: 150px;
+    height: 150px;
+}
+#portfolio {
+  height: 74vh;
+}
+ 
 }
 #contact{
   height: 70vh;
@@ -442,7 +529,7 @@ form{
 }
 @media screen and (max-width:400px){
   #contact {
-    height: 80vh;
+    height: 75vh;
   }
   #my-details-container {
     margin-left: 8%;
@@ -457,4 +544,15 @@ form{
     
 
   }
+}
+@media screen and (max-width:440px){
+  #contact {
+    height: 75vh;
+  }
+}
+@media screen and (max-width:597px){
+  #contact {
+    height: 75vh;
+  }
+}
 }
